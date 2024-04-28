@@ -16,7 +16,8 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: sans-serif; */
 }
 
 .container {
@@ -30,6 +31,9 @@ section {
 }
 
 h2 {
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
   margin-bottom: 48px;
 }
 
@@ -56,11 +60,16 @@ header {
 }
 
 h1 {
+  font-size: 44px;
   margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text {
+  font-size: 18px;
   margin-bottom: 24px;
+  line-height: 1.7;
 }
 
 img {
@@ -72,10 +81,14 @@ img {
 }
 
 .features-title {
+  /* / 18 / 20 / 24 / 30 */
+  font-size: 20px;
   margin-bottom: 16px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 /* TESTIMONIAL */
@@ -93,6 +106,8 @@ img {
 
 .testimonial-text {
   font-style: italic;
+  font-size: 14px;
+  line-height: 1.4;
   margin-bottom: 24px;
 }
 
@@ -101,7 +116,12 @@ img {
   padding: 24px;
 }
 
+/* 
+18 / 20 / 24 / 30 */
 h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
   margin-bottom: 24px;
 }
 
@@ -111,6 +131,8 @@ h3 {
 }
 
 .chair-details li {
+  font-size: 14px;
+  line-height: 1.4;
   display: flex;
   align-items: center;
   gap: 12px;

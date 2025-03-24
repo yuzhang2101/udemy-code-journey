@@ -334,7 +334,9 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
-
+.how-it-works {
+  padding: 9.6rem 0;
+}
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
@@ -400,4 +402,34 @@ z-index 层级：通过负值 z-index 将装饰圆放在内容之后
 .step-img {
   width: 35%;
   /* z-index: 10; */
+}
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 4.8rem; */
+  /* width: 100%; */
+}
+
+.logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 0.5;
 }

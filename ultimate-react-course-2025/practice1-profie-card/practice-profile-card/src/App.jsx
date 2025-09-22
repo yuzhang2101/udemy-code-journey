@@ -5,6 +5,38 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  const skills = [
+    {
+      skill: "HTML+CSS",
+      level: "advanced",
+      color: "#2662EA",
+    },
+    {
+      skill: "JavaScript",
+      level: "advanced",
+      color: "#EFD81D",
+    },
+    {
+      skill: "Web Design",
+      level: "advanced",
+      color: "#C3DCAF",
+    },
+    {
+      skill: "Git and GitHub",
+      level: "intermediate",
+      color: "#E84F33",
+    },
+    {
+      skill: "React",
+      level: "advanced",
+      color: "#60DAFB",
+    },
+    {
+      skill: "Svelte",
+      level: "beginner",
+      color: "#FF3B00",
+    },
+  ];
   return (
     <>
       <body>
@@ -12,13 +44,9 @@ function App() {
           <img className="avatar" src={reactLogo} />
           <Intro />
           <div className="skill-list">
-            <Label content="React" color="#61dafb" icon="⚛️" />
-            <Label content="Vite" color="#646cff" icon="⚡️" />
-            <Label content="CSS" color="#f06529" icon="🎨" />
-            <Label content="CSS" color="#f06529" icon="🎨" />
-            <Label content="CSS" color="#f06529" icon="🎨" />
-            <Label content="CSS" color="#f06529" icon="🎨" />
-            <Label content="CSS" color="#f06529" icon="🎨" />
+            {skills.map((skill) => (
+              <Label key={skill.skill} skill={skill} />
+            ))}
           </div>
         </div>
       </body>
@@ -26,10 +54,17 @@ function App() {
   );
 }
 
-function Label({ content, color, icon }) {
+function Label({ skill }) {
+  const icon =
+    skill.level === "beginner"
+      ? "👶"
+      : skill.level === "intermediate"
+      ? "🧑‍💻"
+      : "🚀";
+
   return (
-    <span className="skill" style={{ backgroundColor: color }}>
-      {content} {icon}
+    <span className="skill" style={{ backgroundColor: skill.color }}>
+      {skill.skill} {icon}
     </span>
   );
 }
